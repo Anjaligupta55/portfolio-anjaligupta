@@ -95,3 +95,65 @@ typeEffect();
 // }
 
 // // animateName();
+
+// const contactForm = document.getElementById("contactForm");
+
+// if (contactForm) {
+//   contactForm.addEventListener("submit", e => {
+//     e.preventDefault();
+
+//     const name = document.getElementById("name").value.trim();
+//     const email = document.getElementById("email").value.trim();
+//     const message = document.getElementById("message").value.trim();
+
+//     const subject = `Portfolio Contact from ${name}`;
+//     const body =
+//       `Name: ${name}%0A` +
+//       `Email: ${email}%0A%0A` +
+//       `${message}`;
+
+//     window.location.href =
+//       `mailto:anjaligupta57392@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+//   });
+// }
+// const contactForm = document.getElementById("contactForm");
+
+// if (contactForm) {
+//   contactForm.addEventListener("submit", function (e) {
+//     e.preventDefault();
+
+//     const name = document.getElementById("name").value.trim();
+//     const email = document.getElementById("email").value.trim();
+//     const subjectInput = document.getElementById("subject").value.trim();
+//     const message = document.getElementById("message").value.trim();
+
+//     const subject = subjectInput || `Portfolio Contact from ${name}`;
+//     const body =
+//       `Name: ${name}\n` +
+//       `Email: ${email}\n\n` +
+//       `${message}`;
+
+//     window.location.href =
+//       `mailto:anjaligupta57392@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+//   });
+// }
+function openMail(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subjectInput = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+
+  const subject = subjectInput || `Portfolio Contact from ${name}`;
+  const body =
+    `Name: ${name}\n` +
+    `Email: ${email}\n\n` +
+    `${message}`;
+
+  window.location.href =
+    "mailto:anjaligupta57392@gmail.com" +
+    "?subject=" + encodeURIComponent(subject) +
+    "&body=" + encodeURIComponent(body);
+}
+
