@@ -556,13 +556,146 @@ body {
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 900px) {
+/* ================= MOBILE RESPONSIVE FIX ================= */
+/* =================== TRUE MOBILE RESPONSIVE FIX =================== */
+@media (max-width: 768px) {
+
+  /* BODY OVERFLOW FIX */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .navbar nav a {
+    margin-left: 0;
+    font-size: 0.85rem;
+  }
+
+  /* HOME SECTION */
+  .home-section {
+    padding: 110px 16px 70px;
+  }
+
+  .home-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .home-title {
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+
+  .home-role {
+    font-size: 0.9rem;
+  }
+
+  .home-desc {
+    font-size: 0.9rem;
+    max-width: 100%;
+    margin: 0 auto 22px;
+  }
+
+  /* BUTTONS */
+  .home-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home-buttons a {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  /* IMAGE */
+  .home-image img {
+    width: 220px;
+    height: auto;
+  }
+
+  .image-glow {
+    width: 240px;
+    height: 240px;
+  }
+
+  /* SECTIONS */
+  .section,
+  .skills-section,
+  .contact-section {
+    padding: 80px 16px;
+  }
+
+  /* SKILLS */
   .skills-grid {
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    flex-direction: column;
-    text-align: left;
+  /* PROJECT CARDS */
+  #projects > div {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* CERTIFICATES */
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-box {
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 22px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+    height: 42px;
+  }
+
+  /* FOOTER */
+  .footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+  .home-title {
+    font-size: 1.9rem;
+  }
+
+  .home-role {
+    font-size: 0.85rem;
+  }
+
+  .home-buttons a {
+    max-width: 100%;
   }
 }
