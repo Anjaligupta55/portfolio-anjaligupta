@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Anjali Gupta | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
 
-  <!-- Welcome Overlay -->
-<div id="welcome-screen">
-  <div class="welcome-bg"></div>
-  <h1 class="home-title">
-  Hi, I’m <span class="typing-text"></span>
-</h1>
+  <!-- Particles & Scroll Progress -->
+  <div id="scroll-progress"></div>
+  <div id="particles-container"></div>
 
-</div>
+  <!-- Welcome Overlay -->
+  <div id="welcome-screen">
+    <div class="welcome-bg"></div>
+    <h1 class="home-title">
+      Hi, I’m <span class="typing-text text-gradient"></span>
+    </h1>
+
+  </div>
 
   <!-- Navigation -->
   <header class="navbar">
@@ -32,317 +43,366 @@
   </header>
 
   <!-- Hero Section -->
- <section id="home" class="home-section">
-  <div class="home-container">
+  <section id="home" class="home-section">
+    <div class="home-container">
 
-    <!-- LEFT CONTENT -->
-    <div class="home-content">
-      <p class="home-welcome">Welcome to my portfolio</p>
+      <!-- LEFT CONTENT -->
+      <div class="home-content reveal">
+        <p class="home-welcome">Welcome to my portfolio</p>
 
-      <h1 class="home-title">
-        Hi, I’m <span class="accent" style="color:  #ff6ac1;;">Anjali Gupta</span>
-      </h1>
+        <h1 class="home-title">
+          Hi, I’m <span class="accent text-gradient">Anjali Gupta</span>
+        </h1>
 
-      <p class="home-role">
-        Frontend Developer • Web Designer • Tech Enthusiast
-      </p>
+        <p class="home-role">
+          Frontend Developer • Web Designer • Tech Enthusiast
+        </p>
 
-      <p class="home-desc">
-        I design and build modern, responsive, and user-friendly web applications with clean UI and smooth experiences.
-My approach blends creativity with logic to turn ideas into intuitive digital products that users enjoy interacting with.
-      </p>
+        <p class="home-desc">
+          I design and build modern, responsive, and user-friendly web applications with clean UI and smooth
+          experiences.
+          My approach blends creativity with logic to turn ideas into intuitive digital products that users enjoy
+          interacting with.
+        </p>
 
-      <div class="home-buttons" style="color:  #ff6ac1;">
-        <a href="resume.pdf" download class="btn primary" >
-          Download Resume
-        </a>
-        <a href="#contact" class="btn outline">
-          Contact Me
-        </a>
+        <div class="home-buttons" style="color:  #ff6ac1;">
+          <a href="resume.pdf" download class="btn primary">
+            Download Resume
+          </a>
+          <a href="#contact" class="btn outline">
+            Contact Me
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- RIGHT IMAGE -->
-    <div class="home-image">
-      <div class="image-glow"></div>
-      <img src="profile.png" alt="Anjali Gupta" />
-    </div>
+      <!-- RIGHT IMAGE -->
+      <div class="home-image reveal">
+        <div class="image-glow"></div>
+        <img src="profile.png" alt="Anjali Gupta" />
+      </div>
 
-  </div>
-</section>
+    </div>
+  </section>
 
 
   <!-- Simple sections placeholders -->
   <section id="about" class="section">
-    <h2 style="color:  #ff6ac1;">About Me</h2>
+    <h2 class="text-gradient">About Me</h2>
     <p>
-      Hello, I am Anjali Gupta, a Computer Science Engineering student with a strong passion for software development and web technologies. I have a solid academic foundation with a CGPA of 9.11 and hands-on experience in building responsive and scalable web applications. I enjoy solving complex problems and creating meaningful digital solutions.
+      Hello, I am Anjali Gupta, a Computer Science Engineering student with a strong passion for software development
+      and web technologies. I have a solid academic foundation with a CGPA of 9.11 and hands-on experience in building
+      responsive and scalable web applications. I enjoy solving complex problems and creating meaningful digital
+      solutions.
 
-My journey in technology is driven by curiosity and the desire to make an impact. I believe in continuous learning, collaboration, and building products that matter. I have solved 300+ Data Structures and Algorithms problems across multiple coding platforms, which has strengthened my problem-solving and analytical skills. I love working on projects that combine innovation with real-world applications and aim to become a skilled Software Engineer.
+      My journey in technology is driven by curiosity and the desire to make an impact. I believe in continuous
+      learning, collaboration, and building products that matter. I have solved 300+ Data Structures and Algorithms
+      problems across multiple coding platforms, which has strengthened my problem-solving and analytical skills. I love
+      working on projects that combine innovation with real-world applications and aim to become a skilled Software
+      Engineer.
     </p>
   </section>
 
- <section id="skills" class="skills-section">
-  <h2 class="skills-title">My <span style="color:  #ff6ac1;">Skills</span></h2>
-  <p class="skills-subtitle">
-    A comprehensive toolkit of technologies and competencies I’ve mastered
-  </p>
+  <section id="skills" class="skills-section">
+    <h2 class="skills-title">My <span class="text-gradient">Skills</span></h2>
+    <p class="skills-subtitle">
+      A comprehensive toolkit of technologies and competencies I’ve mastered
+    </p>
 
-  <div class="skills-grid">
+    <div class="skills-grid reveal">
 
-    <!-- Programming -->
-    <div class="skills-card">
-      <h3>💻 Programming & Fundamentals</h3>
+      <!-- Programming -->
+      <div class="skills-card">
+        <h3>💻 Programming & Fundamentals</h3>
 
-      <div class="skill-bar">
-        <span>Python</span>
-        <div class="bar"><div style="width:85%"></div></div>
+        <div class="skill-bar">
+          <span>Python</span>
+          <div class="bar">
+            <div style="width:85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span>C++</span>
+          <div class="bar">
+            <div style="width:90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span>JavaScript</span>
+          <div class="bar">
+            <div style="width:88%"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span>DSA Problem Solving</span>
+          <div class="bar">
+            <div style="width:92%"></div>
+          </div>
+        </div>
       </div>
 
-      <div class="skill-bar">
-        <span>C++</span>
-        <div class="bar"><div style="width:90%"></div></div>
+
+      <!-- Web Dev -->
+      <div class="skills-card">
+        <h3>🌐 Web Development</h3>
+
+        <div class="skill-bar">
+          <span>HTML & CSS</span>
+          <div class="bar">
+            <div style="width:95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span>React.js</span>
+          <div class="bar">
+            <div style="width:85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span>Node.js</span>
+          <div class="bar">
+            <div style="width:80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span>Responsive Design</span>
+          <div class="bar">
+            <div style="width:90%"></div>
+          </div>
+        </div>
       </div>
 
-      <div class="skill-bar">
-        <span>JavaScript</span>
-        <div class="bar"><div style="width:88%"></div></div>
+
+      <!-- Data & Systems -->
+      <div class="skills-card">
+        <h3>🗄 Data & Systems</h3>
+
+        <div class="skill-bar">
+          <span>SQL</span>
+          <div class="bar">
+            <div style="width:85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span>MongoDB</span>
+          <div class="bar">
+            <div style="width:80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span>Operating Systems</span>
+          <div class="bar">
+            <div style="width:75%"></div>
+          </div>
+        </div>
       </div>
 
-      <div class="skill-bar">
-        <span>DSA Problem Solving</span>
-        <div class="bar"><div style="width:92%"></div></div>
+
+      <!-- Tools -->
+      <div class="skills-card">
+        <h3>🛠 Tools & Platforms</h3>
+
+        <div class="skill-bar">
+          <span>Git & GitHub</span>
+          <div class="bar">
+            <div style="width:90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span>VS Code</span>
+          <div class="bar">
+            <div style="width:95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span>Vercel / Netlify</span>
+          <div class="bar">
+            <div style="width:85%"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <span>Leetcode/GFG</span>
+          <div class="bar">
+            <div style="width:95%"></div>
+          </div>
+        </div>
       </div>
+
     </div>
 
-
-    <!-- Web Dev -->
-    <div class="skills-card">
-      <h3>🌐 Web Development</h3>
-
-      <div class="skill-bar">
-        <span>HTML & CSS</span>
-        <div class="bar"><div style="width:95%"></div></div>
-      </div>
-
-      <div class="skill-bar">
-        <span>React.js</span>
-        <div class="bar"><div style="width:85%"></div></div>
-      </div>
-
-      <div class="skill-bar">
-        <span>Node.js</span>
-        <div class="bar"><div style="width:80%"></div></div>
-      </div>
-
-      <div class="skill-bar">
-        <span>Responsive Design</span>
-        <div class="bar"><div style="width:90%"></div></div>
-      </div>
-    </div>
-
-
-    <!-- Data & Systems -->
-    <div class="skills-card">
-      <h3>🗄 Data & Systems</h3>
-
-      <div class="skill-bar">
-        <span>SQL</span>
-        <div class="bar"><div style="width:85%"></div></div>
-      </div>
-
-      <div class="skill-bar">
-        <span>MongoDB</span>
-        <div class="bar"><div style="width:80%"></div></div>
-      </div>
-
-      <div class="skill-bar">
-        <span>Operating Systems</span>
-        <div class="bar"><div style="width:75%"></div></div>
-      </div>
-    </div>
-
-
-    <!-- Tools -->
-    <div class="skills-card">
-      <h3>🛠 Tools & Platforms</h3>
-
-      <div class="skill-bar">
-        <span>Git & GitHub</span>
-        <div class="bar"><div style="width:90%"></div></div>
-      </div>
-
-      <div class="skill-bar">
-        <span>VS Code</span>
-        <div class="bar"><div style="width:95%"></div></div>
-      </div>
-
-      <div class="skill-bar">
-        <span>Vercel / Netlify</span>
-        <div class="bar"><div style="width:85%"></div></div>
-      </div>
-    </div>
-
-  </div>
-
-</section>
+  </section>
 
 
   <section id="projects" class="section">
-  <h2 style="font-size:2.2rem;text-align:center;margin-bottom:10px;">My <span style="color:  #ff6ac1;">Projects</span></h2>
-  <p style="text-align:center;color:#9ca3af;margin-bottom:40px;">
-    Some of the projects I’ve built using modern web technologies
-  </p>
+    <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
+    <p class="section-subtitle">
+      Some of the projects I’ve built using modern web technologies
+    </p>
 
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;">
+    <div class="reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;">
 
-    <!-- Project Card 1 -->
-    <div style="background:rgba(15,23,42,0.9);padding:20px;border-radius:18px;border:1px solid rgba(148,163,184,0.2);box-shadow:0 10px 40px rgba(0,0,0,0.6);transition:0.3s;">
-      <h3 style="color:#38bdf8;">Portfolio Website</h3>
-      <p style="color:#9ca3af;font-size:14px;margin:10px 0;">
-        A responsive personal portfolio built using HTML, CSS, and JavaScript with animations and modern UI.
-      </p>
+      <!-- Project Card 1 -->
+      <div class="glass-card project-card">
+        <h3>Portfolio Website</h3>
+        <p>
+          A responsive personal portfolio built using HTML, CSS, and JavaScript with animations and modern UI.
+        </p>
 
-      <div style="margin:12px 0;">
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">HTML</span>
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">CSS</span>
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">JavaScript</span>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <a href="#" target="_blank" style="color:#ff6ac1;text-decoration:none;font-size:14px;">Live Demo →</a>
+        <br>
+        <a href="https://github.com/Anjaligupta55/portfolio-anjaligupta" target="_blank"
+          style="color:#38bdf8;text-decoration:none;font-size:14px;">GitHub →</a>
+      </div>
+      <!-- Project Card 2 -->
+      <div class="glass-card project-card">
+        <h3>Movie Ticket Booking</h3>
+        <p>
+          A movie ticket booking application that allows users to select movies, showtimes, and seats with a clean and
+          intuitive user interface.
+        </p>
+
+        <div class="tags">
+          <span>JavaScript</span>
+          <span>API</span>
+          <span>SQL</span>
+        </div>
+
+        <a href="https://movie-ticket-five-virid.vercel.app/" target="_blank"
+          style="color:#ff6ac1;text-decoration:none;font-size:14px;">Live Demo →</a>
+        <br>
+        <a href="https://github.com/Anjaligupta55/movie-ticket-booking" target="_blank"
+          style="color:#38bdf8;text-decoration:none;font-size:14px;">GitHub →</a>
       </div>
 
-      <a href="#" target="_blank" style="color:#ff6ac1;text-decoration:none;font-size:14px;">Live Demo →</a>
-      <br>
-      <a href="https://github.com/Anjaligupta55/portfolio-anjaligupta" target="_blank" style="color:#38bdf8;text-decoration:none;font-size:14px;">GitHub →</a>
-    </div>
-<!-- poject 2 -->
- <div style="background:rgba(15,23,42,0.9);padding:20px;border-radius:18px;border:1px solid rgba(148,163,184,0.2);box-shadow:0 10px 40px rgba(0,0,0,0.6);transition:0.3s;">
-      <h3 style="color:#38bdf8;">Movie Ticket Booking</h3>
-      <p style="color:#9ca3af;font-size:14px;margin:10px 0;">
-        A movie ticket booking application that allows users to select movies, showtimes, and seats with a clean and intuitive user interface.
-      </p>
+      <!-- Project Card 3 -->
+      <div class="glass-card project-card">
+        <h3>Url shortner</h3>
+        <p>
+          A URL shortener that converts long links into short, shareable URLs for easy access and tracking.
+        </p>
 
-      <div style="margin:12px 0;">
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">JavaScript</span>
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">API</span>
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">SQL</span>
+        <div class="tags">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+        </div>
+
+        <a href="#" target="_blank" style="color:#ff6ac1;text-decoration:none;font-size:14px;">Live Demo →</a>
+        <br>
+        <a href="https://github.com/Anjaligupta55/url-shortner" target="_blank"
+          style="color:#38bdf8;text-decoration:none;font-size:14px;">GitHub →</a>
       </div>
 
-      <a href="https://movie-ticket-five-virid.vercel.app/" target="_blank" style="color:#ff6ac1;text-decoration:none;font-size:14px;">Live Demo →</a>
-      <br>
-      <a href="https://github.com/Anjaligupta55/movie-ticket-booking" target="_blank" style="color:#38bdf8;text-decoration:none;font-size:14px;">GitHub →</a>
-    </div>
 
-    <!-- Project Card 2 -->
-    <div style="background:rgba(15,23,42,0.9);padding:20px;border-radius:18px;border:1px solid rgba(148,163,184,0.2);box-shadow:0 10px 40px rgba(0,0,0,0.6);transition:0.3s;color: #ff6ac1;">
-      <h3 style="color:#38bdf8;">Url shortner</h3>
-      <p style="color:#9ca3af;font-size:14px;margin:10px 0;">
-        A URL shortener that converts long links into short, shareable URLs for easy access and tracking.
-      </p>
+      <!-- Project Card 3 -->
+      <div class="glass-card project-card">
+        <h3>Spotify clone app</h3>
+        <p>
+          A Spotify clone application that allows users to browse, play, and explore music with a clean and intuitive
+          user interface.
+        </p>
 
-      <div style="margin:12px 0;">
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">React</span>
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">Node.js</span>
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">MongoDB</span>
+        <div class="tags">
+          <span>JavaScript</span>
+          <span>API</span>
+          <span>SQL</span>
+        </div>
+
+        <a href="#" target="_blank" style="color:#ff6ac1;text-decoration:none;font-size:14px;">Live Demo →</a>
+        <br>
+        <a href="#" target="_blank" style="color:#38bdf8;text-decoration:none;font-size:14px;">GitHub →</a>
       </div>
 
-      <a href="#" target="_blank" style="color:#ff6ac1;text-decoration:none;font-size:14px;">Live Demo →</a>
-      <br>
-      <a href="https://github.com/Anjaligupta55/url-shortner" target="_blank" style="color:#38bdf8;text-decoration:none;font-size:14px;">GitHub →</a>
     </div>
+  </section>
+  <section id="certificates" class="section">
+    <h2>My <span class="accent" style="color:  #ff6ac1;" style="left: 50px;">Certificates</span></h2>
+    <p>Recognitions and certifications I have earned</p>
 
-
-    <!-- Project Card 3 -->
-    <div style="background:rgba(15,23,42,0.9);padding:20px;border-radius:18px;border:1px solid rgba(148,163,184,0.2);box-shadow:0 10px 40px rgba(0,0,0,0.6);transition:0.3s;">
-      <h3 style="color:#38bdf8;">Spotify clone app</h3>
-      <p style="color:#9ca3af;font-size:14px;margin:10px 0;">
-        A Spotify clone application that allows users to browse, play, and explore music with a clean and intuitive user interface.
-      </p>
-
-      <div style="margin:12px 0;">
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">JavaScript</span>
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">API</span>
-        <span style="background:#020617;padding:4px 10px;border-radius:10px;font-size:12px;border:1px solid #1e293b;">SQL</span>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <h3>Web Development Bootcamp</h3>
+        <p>HTML, CSS, JavaScript</p>
       </div>
 
-      <a href="#" target="_blank" style="color:#ff6ac1;text-decoration:none;font-size:14px;">Live Demo →</a>
-      <br>
-      <a href="#" target="_blank" style="color:#38bdf8;text-decoration:none;font-size:14px;">GitHub →</a>
-    </div>
-
-  </div>
-</section>
-<section id="certificates" class="section">
-  <h2>My <span class="accent" style="color:  #ff6ac1;" style="left: 50px;">Certificates</span></h2>
-  <p>Recognitions and certifications I have earned</p>
-
-  <div class="cert-grid">
-    <div class="cert-card">
-      <h3>Web Development Bootcamp</h3>
-      <p>HTML, CSS, JavaScript</p>
-    </div>
-
-    <div class="cert-card">
-      <h3>DSA with C++</h3>
-      <p>Problem Solving & Algorithms</p>
-    </div>
-
-    <div class="cert-card">
-      <h3>React.js Certification</h3>
-      <p>Frontend Development</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="contact-section">
-  <h2 class="contact-title">
-    Get in <span class="accent" style="color:  #ff6ac1;">Touch</span>
-  </h2>
-  <p class="contact-desc">
-    Have a project idea or want to collaborate?  
-    Feel free to reach out — I’d love to connect!
-  </p>
-
-  <div class="contact-container">
-
-    <!-- LEFT SIDE -->
-    <div class="contact-info">
-      <div class="contact-box">
-        <h3>📍 Location</h3>
-        <p>Muradnagar, Uttar Pradesh, India</p>
+      <div class="cert-card">
+        <h3>DSA with C++</h3>
+        <p>Problem Solving & Algorithms</p>
       </div>
 
-      <div class="contact-box">
-        <h3>✉ Email</h3>
-        <p>anjaligupta57392@gmail.com</p>
-      </div>
-
-      <div class="contact-box social">
-        <a href="https://www.linkedin.com/in/anjali-gupta-07b73a326/" target="_blank">
-          🔗 Join me on LinkedIn
-        </a>
-        <a href="https://github.com/Anjaligupta55" target="_blank">
-          🐙 Visit my GitHub
-        </a>
+      <div class="cert-card">
+        <h3>React.js Certification</h3>
+        <p>Frontend Development</p>
       </div>
     </div>
+  </section>
 
-    <!-- RIGHT SIDE -->
-    <form id="contactForm" class="contact-form" onsubmit="openMail(event)">
+  <section id="contact" class="contact-section">
+    <h2 class="contact-title">
+      Get in <span class="accent text-gradient">Touch</span>
+    </h2>
+    <p class="contact-desc">
+      Have a project idea or want to collaborate?
+      Feel free to reach out — I’d love to connect!
+    </p>
 
-  <h3>Send a Message</h3>
+    <div class="contact-container reveal">
 
-  <input type="text" id="name" placeholder="Your Name" required />
-  <input type="email" id="email" placeholder="Your Email" required />
-  <input type="text" id="subject" placeholder="Subject" />
-  <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <!-- LEFT SIDE -->
+      <div class="contact-info">
+        <div class="contact-box">
+          <h3>📍 Location</h3>
+          <p>Muradnagar, Uttar Pradesh, India</p>
+        </div>
 
-  <button type="submit" class="btn primary">
-    Send Message
-  </button>
-</form>
+        <div class="contact-box">
+          <h3>✉ Email</h3>
+          <p>anjaligupta57392@gmail.com</p>
+        </div>
+
+        <div class="contact-box social">
+          <a href="https://www.linkedin.com/in/anjali-gupta-07b73a326/" target="_blank">
+            🔗 Join me on LinkedIn
+          </a>
+          <a href="https://github.com/Anjaligupta55" target="_blank">
+            🐙 Visit my GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <form id="contactForm" class="contact-form" onsubmit="openMail(event)">
+
+        <h3>Send a Message</h3>
+
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input type="text" id="subject" placeholder="Subject" />
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn primary">
+          Send Message
+        </button>
+      </form>
 
 
-  </div>
-</section>
+    </div>
+  </section>
 
 
 
@@ -350,6 +410,9 @@ My journey in technology is driven by curiosity and the desire to make an impact
     <p>© <span id="year"></span> Anjali Gupta. All rights reserved.</p>
   </footer>
 
+  <button id="back-to-top" class="btn glass-card">↑</button>
+
   <script src="script.js"></script>
 </body>
+
 </html>
