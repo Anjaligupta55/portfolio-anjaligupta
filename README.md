@@ -5,8 +5,6 @@ This repo contains the projects I’ve built while learning and exploring **Web 
 
 I love building practical solutions and learning by doing 🚀
 
----
-
 ## 🧑‍🎓 About Me
 
 🎓 B.tech Computer Science Student  
@@ -19,8 +17,6 @@ I love building practical solutions and learning by doing 🚀
 - Python & Data Analysis
 - Machine Learning & AI Projects
 - Problem Solving (DSA)
-
----
 
 ## 🛠️ Tech Stack
 
